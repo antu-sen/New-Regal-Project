@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,123 +8,235 @@
     <!-- Google Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- DaisyUi Cdn Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-      <!-- Font Awsome Cdn Link -->
-     <script src="https://kit.fontawesome.com/bb3291d151.js" crossorigin="anonymous"></script>
+    <!-- Font Awsome Cdn Link -->
+    <script src="https://kit.fontawesome.com/bb3291d151.js" crossorigin="anonymous"></script>
 
     <style>
         .font-poppins {
-            font-family:  "Poppins", sans-serif;
+            font-family: "Poppins", sans-serif;
         }
     </style>
 
     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'btn-primary': '#B68C5A',
-            
-          }
-        }
-      }
-    }
-  </script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-primary': '#B68C5A',
 
-    
+                    }
+                }
+            }
+        }
+    </script>
+
+
 
 </head>
+
 <body class="font-poppins">
-   <!-- Header Scetion Start -->
+    <!-- Header Scetion Start -->
     <Header>
         <!-- Navbar Start -->
-         <nav class="my-16 md:container mx-auto">
+        <nav class="my-16 md:container mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="text-gray-500">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a class="text-gray-500">Service <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a class="text-gray-500">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a class="text-gray-500">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a class="text-gray-500">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a class="text-gray-500">Home <i class="fa-solid fa-chevron-right"></i></a></li>
-                      <li><a class="text-gray-500">Service <i class="fa-solid fa-chevron-right"></i></a></li>
-                      <li><a class="text-gray-500">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
-                      <li><a class="text-gray-500">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
-                      <li><a class="text-gray-500">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
-                    </ul>
-                  </div>
-                  <span class="w-32 cursor-pointer"><img src="./images/logo2.png" alt=""></span>
+                    <span class="w-32 cursor-pointer"><img src="./images/logo2.png" alt=""></span>
 
-                  </div>
+                </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-gray-500">Home <i class="fa-solid fa-chevron-right"></i></a></li>
-                    <li><a class="text-gray-500">Service <i class="fa-solid fa-chevron-right"></i></a></li>
-                    <li><a class="text-gray-500">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
-                    <li><a class="text-gray-500">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
-                    <li><a class="text-gray-500">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
-                    
-                  </ul>
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-gray-500">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="text-gray-500">Service <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="text-gray-500">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="text-gray-500">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="text-gray-500">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+
+                    </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn bg-btn-primary text-white">Free Consultation</a>
+                    <a class="btn bg-btn-primary text-white">Free Consultation</a>
                 </div>
-              </div>
-            </nav>
-            <!-- Navbar End -->
-            <section class="md:container mx-auto">
-            <div class="hero h-[70vh] rounded-xl overflow-hidden lg:w-full bg-cover"
-            style="background-image: url(./images/banner.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content text-white">
-              <div class="lg:max-w-2xl">
-                <h1 class="mb-5 text-3xl lg:text-6xl font-bold">We Provide Effective<br>
-                    Legal Solutions</h1>
-                <p class="mb-5 text-[#E7E7E7]">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <div>
-                    <input class="w-3/5 py-[11px] rounded-lg pl-2 border-none outline-none text-black" type="text" placeholder="Search your services">
-                    <button type="submit" class="btn bg-[#B68C5A] border-none px-6 text-white font-bold hover:text-black">Search</button>
-                </div>
-               
-              </div>
             </div>
-          </div>
-            </section>
+        </nav>
+        <!-- Navbar End -->
+        <section class="md:container mx-auto">
+            <div class="hero h-[70vh] rounded-xl overflow-hidden lg:w-full bg-cover"
+                style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content text-white">
+                    <div class="lg:max-w-2xl">
+                        <h1 class="mb-5 text-3xl lg:text-6xl font-bold">We Provide Effective<br>
+                            Legal Solutions</h1>
+                        <p class="mb-5 text-[#E7E7E7]">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <div>
+                            <input class="w-3/5 py-[11px] rounded-lg pl-2 border-none outline-none text-black"
+                                type="text" placeholder="Search your services">
+                            <button type="submit"
+                                class="btn ml-5 bg-[#B68C5A] border-none px-6 text-white font-bold hover:text-black">Search</button>
+                        </div>
 
-
+                    </div>
+                </div>
+            </div>
+        </section>
     </Header>
+    <!-- Header Section End -->
+
     <!-- Main Section Start -->
-     <main class="md:container mx-auto">
-        <div>
-            <i class="fa-duotone fa-solid fa-square-arrow-right"></i>
-        </div>
+    <main class="md:container mx-auto">
 
-     </main>
-     <!-- Footer Section Start -->
-      <footer>
+        <!-- Legal Practice Section Start -->
+        <section class="my-32">
+            <div>
+                <h1 class=" text-4xl md:text-6xl font-bold text-center mb-6">The Legal Practice Area</h1>
+                <p class="text-center text-[#707070] text-xl">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have<br>suffered alteration in some form, by injected humour.</p>
+            </div>
+            <!-- Card Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 p-16">
+                <!-- Card 1 -->
+                <div class="card bg-base-100 border-b-[2px] rounded-none">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" card-body items-center text-center">
+                        <h2 class="card-title font-bold">Business Law</h2>
+                        <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            <div>
+                                <img src="./images/right.png" alt="">
+                            </div>
 
-      </footer>
-    
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card bg-whight-200 rounded-none border-l-[2px]
+                 border-r-[2px] border-b-[2px]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/criminal.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" card-body items-center text-center">
+                        <h2 class="card-title font-bold">Criminal Law</h2>
+                        <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            <div>
+                                <img class="rounded-full" src="./images/right.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/child.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" card-body items-center text-center border-b-[2px]">
+                        <h2 class="card-title font-bold">Child Support</h2>
+                        <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            <div>
+                                <img src="./images/right.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/education.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" card-body items-center text-center">
+                        <h2 class="card-title font-bold">Education Law</h2>
+                        <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            <div>
+                                <img src="./images/right.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card bg-white-200 rounded-none  border-r-[2px] border-l-[2px]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/divorce.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" card-body items-center text-center">
+                        <h2 class="card-title font-bold">Divorce Law</h2>
+                        <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            <div>
+                                <img src="./images/right.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/tax.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" card-body items-center text-center">
+                        <h2 class="card-title font-bold">Tax Law</h2>
+                        <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            <div>
+                                <img src="./images/right.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- Legal Practice Section End -->
+
+
+    </main>
+    <!-- Footer Section Start -->
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
